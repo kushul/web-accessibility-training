@@ -1,0 +1,40 @@
+/* Set the font family and size for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Style the main heading */
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+/* Style the section headings */
+h2 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* Style the navigation links */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
