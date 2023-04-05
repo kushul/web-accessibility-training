@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* Set font family and size for the table */
+    table {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    /* Add a border to the table and set its width to 100% of the parent container */
+    table {
+        border: 1px solid #ccc;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    /* Style the table caption */
+    caption {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Style the column headers */
+    th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Style the data cells */
+    td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Style the row headers */
+    th[scope="row"] {
+        font-weight: bold;
+        text-align: left;
+    }
+
+    /* Style the total row */
+    tfoot th {
+        font-weight: bold;
+        text-align: right;
+    }
+
+    tfoot td {
+        font-weight: bold;
+        text-align: left;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>Example table</caption>
+        <thead>
+            <tr>
+                <th id="colheader1">Column 1</th>
+                <th id="colheader2">Column 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="rowheader1">Row 1</th>
+                <td headers="colheader1" aria-colindex="1" aria-colindextext="First column">Data 1</td>
+                <td headers="colheader2" aria-colindex="2" aria-colindextext="Second column">Data 2</td>
+            </tr>
+            <tr>
+                <th id="rowheader2">Row 2</th>
+                <td headers="colheader1" aria-colindex="1" aria-colindextext="First column">Data 3</td>
+                <td headers="colheader2" aria-colindex="2" aria-colindextext="Second column" aria-colspan="2">Data 4
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td aria-colindex="1" aria-colindextext="First column"></td>
+                <td aria-colindex="2" aria-colindextext="Second column"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
