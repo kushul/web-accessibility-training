@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px 0.5px blue;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+#name-error,
+#email-error,
+#password-error {
+  display: none;
+}
+
+#name[aria-invalid="true"] + #name-error,
+#email[aria-invalid="true"] + #email-error,
+#password[aria-invalid="true"] + #password-error {
+  display: block;
+}
+
+#email[aria-invalid="true"] + #email-format,
+#password[aria-invalid="true"] + #password-format {
+  display: block;
+  color: red;
+  font-style: italic;
+  font-size: 0.8rem;
+}

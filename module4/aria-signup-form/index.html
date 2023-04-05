@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Form Example</title>
+</head>
+
+<body>
+    <h1>Sign Up Form</h1>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" aria-required="true" aria-describedby="name-error">
+            <div id="name-error" role="alert" aria-live="assertive" aria-relevant="all" style="color: red;">Please enter
+                your name.</div>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" aria-required="true" aria-describedby="email-error email-format">
+            <div id="email-error" role="alert" aria-live="assertive" aria-relevant="all" style="color: red;">Please
+                enter your email address.</div>
+            <div id="email-format" style="display:none;">Email should be in the format user@example.com</div>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" aria-required="true" aria-describedby="password-error password-format">
+            <div id="password-error" role="alert" aria-live="assertive" aria-relevant="all" style="color: red;">Please
+                enter your password.</div>
+            <div id="password-format" style="display:none;">Password should be at least 8 characters long and contain at
+                least one uppercase letter, one lowercase letter, and one number.</div>
+        </div>
+        <div>
+            <button type="submit" aria-label="Submit Form">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
