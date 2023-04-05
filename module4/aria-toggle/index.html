@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* button[aria-expanded="true"] {
+            font-weight: bold;
+        }
+
+        [aria-hidden="true"] {
+            display: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <button aria-expanded="false" aria-describedby="description" aria-controls="content">Show more</button>
+    <div id="content" aria-hidden="true">
+        <p>Some additional content here</p>
+    </div>
+    <div id="description" aria-hidden="true">
+        <p>This button toggles the visibility of the content below.</p>
+    </div>
+
+    <!-- <script>
+        const button = document.querySelector('button');
+        const content = document.querySelector('#content');
+
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true' || false;
+            button.setAttribute('aria-expanded', !expanded);
+            content.setAttribute('aria-hidden', expanded);
+        });
+    </script> -->
+
+</body>
+
+</html>
