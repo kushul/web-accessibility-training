@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a24879a822.js" crossorigin="anonymous"></script>
+    <title>SR only</title>
+
+    <style>
+        button {
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
+
+        i {
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+        }
+
+        .sr-only {
+            position: absolute !important;
+            clip: rect(1px 1px 1px 1px);
+            /* IE6, IE7 */
+            clip: rect(1px, 1px, 1px, 1px);
+            padding: 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn btn-primary">
+        <i class="fa fa-search"></i>
+        <span class="sr-only">Search button</span>
+    </button>
+</body>
+
+</html>
