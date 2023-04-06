@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header sr-only</title>
+</head>
+
+<style>
+    html,
+    body,
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        margin: 0;
+        font-size: 0;
+    }
+
+    .logo a {
+        display: inline-block;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .main-nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .sr-only {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1 class="logo">
+            <a href="/">
+                <img src="https://placehold.co/40x40" alt="Logo">
+                <span class="sr-only">Company Name</span>
+            </a>
+        </h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+
+</html>
