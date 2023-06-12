@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #eee;
+  font-family: Verdana;
+  width: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin: 0 auto;
+  width: 900px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h4 {
+  color: #ffa800;
+  line-height: 1.5em;
+}
+
+/* ------ header --------- */
+
+header {
+  background-color: #2eb2a0;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul a {
+  color: #94e5d7;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline;
+}
+
+#active {
+  background-color: white;
+  color: #2eb2a0;
+  padding: 10px;
+}
+
+nav ul a:hover {
+  color: white;
+  width: 150px;
+}
+
+/* ------ content --------- */
+
+#content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 1.5em;
+}
+
+#second {
+  width: 90%;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#content h4,
+#second h4 {
+  padding-top: 20px;
+}
+
+/* ------ footer --------- */
+
+footer {
+  background-color: lightgrey;
+  color: grey;
+  margin-top: 20px;
+  padding: 20px 0 20px;
+  width: 100%;
+}
+
+.footer_links {
+  width: 80%;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.footer_menu {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer ul ul {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+footer ul a {
+  display: block;
+  line-height: 1.5em;
+  margin-right: 45px;
+  text-decoration: none;
+  color: grey;
+}
+
+footer a:hover {
+  color: #ffa800;
+}
+
+/* ---- media queries ----- */
+@media screen and (max-width: 320px) {
+    #second {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  nav {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  header ul a{
+  list-style: none;
+  display: block;
+  margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .page-wrap {
+  margin: 0 auto;
+  width: 90%;
+  }
+
+  #content {
+  width: 80%;
+  min-height: 30%;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-column-count: 1;
+  line-height: 1.5em;
+  }
+
+  #second {
+    width: 80%;
+  }
+
+  .footer_links {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer_menu {
+    width: 80%;
+  }
+
+  .footer_menu ul {
+    display: inline;
+    padding-bottom: 20px;
+  }
+
+ }
+
