@@ -8,18 +8,18 @@
     <title>Document</title>
 
     <style>
-        /* button[aria-expanded="true"] {
+        button[aria-expanded="true"] {
             font-weight: bold;
         }
 
         [aria-hidden="true"] {
             display: none;
-        } */
+        }
     </style>
 </head>
 
 <body>
-    <button aria-expanded="false" aria-describedby="description" aria-controls="content">Show more</button>
+    <button aria-expanded="false" aria-labelledby="description" aria-controls="content">Show more</button>
     <div id="content" aria-hidden="true">
         <p>Some additional content here</p>
     </div>
@@ -27,7 +27,7 @@
         <p>This button toggles the visibility of the content below.</p>
     </div>
 
-    <!-- <script>
+    <script>
         const button = document.querySelector('button');
         const content = document.querySelector('#content');
 
@@ -36,7 +36,7 @@
             button.setAttribute('aria-expanded', !expanded);
             content.setAttribute('aria-hidden', expanded);
         });
-    </script> -->
+    </script>
 
 </body>
 
